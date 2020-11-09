@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container_95{
+  margin: auto;
+  width: 95%;
+}
+/* utility class */
+.bg_black{
+  background-color: black;
+}
+.bg_upgrade_bar{
+  background-color: #080b1273;
+}
+.bg_darkblue{
+  background-color: #141922;
+}
+.bg_footer{
+  background-color: #282828;
+}
+.txt_white{
+  color: white;
+}
+.txt_sidebar{
+  color: #717171;
+}
+.txt_album{
+  color: #7C7E83;
+}
+.icon_color{
+  color: #A3A3A3;
+}
+.d_flex{
+  display: flex;
+}
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/* /utility class */
+.wrapper{
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* main */
+#site_main{
+height: calc(100% - 70px);
+align-items: stretch;
+}
+/* sidebar */
+#sidebar{
+  min-width: 250px;
+}
+/* /sidebar */
+
+#main_content{
+  flex-direction: column;
+  width: 100%;
+}
+/* upgrade bar */
+#main_content .upgrade_bar{
+  min-height: 70px;
+  flex-direction: row-reverse;
+  padding-right: 20px;
+  position: absolute;
+  width: calc(100% - 250px);
+  z-index: 10;
+}
+#main_content .upgrade_bar > .btn-default{
+  color: white;
+  font-weight: 500;
+  background-color: #080B12;
+  border-color: white;
+  border-radius: 18px;
+  align-self: center;
+}
+#main_content .upgrade_bar > .btn{
+  padding: 8px 31px;
+  font-size: 10px;
+}
+/* /upgrade bar */
+
+/* albums */
+#main_content .albums_container{
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+/* albums menu */
+#main_content .albums_menu{
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#main_content .albums_menu a{
+  color: #7C7E83;
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 12px;
+}
+#main_content .albums_menu .border_green{
+  position: relative;
+}
+#main_content .albums_menu .border_green:after{
+  content: "";
+  background: #ADFF2F;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 30px;
+}
+/* /albums menu */
+
+/* albums recently played */
+.recently_played_img li{
+  list-style: none;
+
+}
+.recently_played_img li img{
+  width: 90%;
+}
+/* /albums recently played */
+
+/* /albums */
+/* /main */
+
+/* footer */
+#site_footer{
+  height: 70px;
+}
+/* /footer */
