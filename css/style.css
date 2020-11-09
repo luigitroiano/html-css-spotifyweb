@@ -148,6 +148,7 @@ h5{
   margin-top: 14px !important;
   margin-bottom: 5px !important;
 }
+
 /* /albums recently played */
 
 /* albums for Gigi & albums popular */
@@ -174,3 +175,39 @@ h5{
   height: 70px;
 }
 /* /footer */
+@media screen and (max-width: 1200px){
+  .recently_played ul{
+    flex-wrap: wrap;
+  }
+  .recently_played li{
+    flex-basis: calc(100%/4);
+  }
+  .for_gigi li,
+  .popular li{
+    width: calc(100% / 4);
+  }
+}
+@media screen and (max-width: 992px){
+  .albums_menu{
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  .albums_menu *{
+    flex-basis: calc(100%/3);
+    text-align: center;
+    margin: 15px 0;
+  }
+  .recently_played ul{
+    flex-wrap: wrap;
+  }
+  .recently_played li{
+    flex-basis: calc(100%/2);
+  }
+  .for_gigi li,
+  .popular li{
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 768px){
+
+}
