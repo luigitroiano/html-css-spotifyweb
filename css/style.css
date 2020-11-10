@@ -55,11 +55,17 @@ li{
 .fs_12{
   font-size: 12px;
 }
+.fs_30{
+  font-size: 30px;
+}
 .fw_600{
   font-weight: 600;
 }
 .fw_500{
   font-weight: 500;
+}
+.mt_5{
+  margin-top: 5px;
 }
 .mb_25{
   margin-bottom: 25px !important;
@@ -72,6 +78,9 @@ li{
 }
 .pl_15{
   padding-left: 15px;
+}
+.none{
+  display: none;
 }
 /* /utility class */
 .wrapper{
@@ -98,6 +107,10 @@ align-items: stretch;
 }
 .sidebar_logo a{
   flex-basis: 65%;
+}
+.sidebar_logo_xs{
+  width: 40px;
+  margin: auto;
 }
 /* /sidebar logo */
 /* sidebar menu */
@@ -179,6 +192,62 @@ align-items: stretch;
   color: #D2D2D2;
 }
 /* /sidebar footer */
+@media screen and (max-width: 768px){
+  #main_content .upgrade_bar{
+    width: calc(100% - 50px) !important;
+  }
+  #sidebar{
+    position: relative;
+    min-width: 50px;
+    max-height: 100vh;
+  }
+  .sidebar_logo{
+    display: none;
+  }
+  .sidebar_logo_xs{
+    width: fit-content;
+    display: block;
+    margin: 5px auto;
+  }
+  .sidebar_menu{
+    display: none;
+  }
+  .sidebar_menu_xs{
+    display: block;
+    width: 27px;
+    margin: auto;
+  }
+  .sidebar_playlist{
+    display: none;
+  }
+  .sidebar_footer{
+    display: none;
+  }
+  .sidebar_footer_xs{
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  .sidebar_footer_xs a{
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .sidebar_footer_xs img{
+    width: 20px;
+    height: 20px;
+  }
+  .sidebar_footer_xs a:first-child img{
+    width: 18px;
+    height: 18px;
+    padding-right: 3px;
+  }
+  .sidebar_footer_xs a:last-child img{
+    background-color: #717171;
+    border-radius: 50%;
+  }
+}
 /* /sidebar */
 
 #main_content{
