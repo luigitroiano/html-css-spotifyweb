@@ -7,12 +7,76 @@
   <title>Spotify</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b1c0bf61f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrapper d_flex">
     <main id="site_main" class="d_flex">
         <aside id="sidebar" class="bg_black txt_white">
-          Lorem ipsum
+          <!-- sidebar logo -->
+          <div class="sidebar_logo d_flex">
+            <a href="#"><img src="img/logo.svg" alt="logo spotify"></a>
+          </div>
+          <!-- /sidebar logo -->
+          <!-- sidebar menu -->
+          <div class="sidebar_menu">
+            <ul>
+              <li>
+                <a class="pl_25" href="#">
+                  <img src="img/home.svg" alt="icona casa">
+                  <div class="txt_sidebar_active fw_500 fs_12">Home</div>
+                </a>
+              </li>
+              <li>
+                <a class="pl_25" href="#">
+                  <img src="img/search.svg" alt="icona casa">
+                  <div class="txt_sidebar fw_500 fs_12">Cerca</div>
+                </a>
+              </li>
+              <li>
+                <a class="pl_25" href="#">
+                  <img src="img/libreria.svg" alt="icona casa">
+                  <div class="txt_sidebar fw_500 fs_12">La tua libreria</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /sidebar menu -->
+          <!-- sidebar playlist -->
+          <div class="sidebar_playlist">
+            <h5 class="pl_25 fw_600">PLAYLIST</h5>
+            <div class="playlist">
+              <a class="pl_25 d_flex" href="#">
+                <i class="fas fa-plus-square icon_color"></i>
+                <div class="txt_sidebar fw_500 fs_12 pl_15  fw_600">Crea Playlist</div>
+              </a>
+            </div>
+            <div class="playlist_name">
+              <ul>
+                <a href="#"><li class="txt_sidebar fw_500 fs_12 pl_25 fw_600">Nome Playlist</li></a>
+                <a href="#"><li class="txt_sidebar fw_500 fs_12 pl_25 fw_600">Nome Playlist</li></a>
+                <a href="#"><li class="txt_sidebar fw_500 fs_12 pl_25 fw_600">Nome Playlist</li></a>
+                <a href="#"><li class="txt_sidebar fw_500 fs_12 pl_25 fw_600">Nome Playlist</li></a>
+                <a href="#"><li class="txt_sidebar fw_500 fs_12 pl_25 fw_600">Nome Playlist</li></a>
+                <a href="#"><li class="txt_sidebar fw_500 fs_12 pl_25 fw_600">Nome Playlist</li></a>
+                <a href="#"><li class="txt_sidebar fw_500 fs_12 pl_25 fw_600">Nome Playlist</li></a>
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar playlist -->
+          <!-- sidebar footer -->
+          <div class="sidebar_footer d_flex">
+            <a class="pl_25" href="#">
+              <img src="img/download.svg" alt="icona download">
+              <span class="txt_sidebar fw_500 fs_12 fw_600">Installa app</span>
+            </a>
+            <hr>
+            <a class="pl_25" href="#">
+              <img src="img/profile.svg" alt="icona profilo">
+              <span class="txt_sidebar fw_500 fs_12 fw_600">Gigi Troiano</span>
+            </a>
+          </div>
+          <!-- /sidebar footer -->
         </aside>
 
         <div id="main_content" class="d_flex bg_darkblue txt_white">

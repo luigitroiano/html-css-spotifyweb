@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+li{
+  list-style: none;
+}
 .container_95{
   margin: auto;
   width: 95%;
@@ -25,6 +28,9 @@
 }
 .txt_sidebar{
   color: #717171;
+}
+.txt_sidebar_active{
+  color: #D2D2D2;
 }
 .txt_album{
   color: #7C7E83;
@@ -52,11 +58,20 @@
 .fw_600{
   font-weight: 600;
 }
+.fw_500{
+  font-weight: 500;
+}
 .mb_25{
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
 }
 .pr_15{
   padding-right: 15px;
+}
+.pl_25{
+  padding-left: 25px;
+}
+.pl_15{
+  padding-left: 15px;
 }
 /* /utility class */
 .wrapper{
@@ -71,8 +86,99 @@ align-items: stretch;
 }
 /* sidebar */
 #sidebar{
+  position: relative;
   min-width: 250px;
+  max-height: 100vh;
 }
+/* sidebar logo */
+.sidebar_logo{
+  height: 70px;
+  align-items: center;
+  padding: 0 0 5px 25px;
+}
+.sidebar_logo a{
+  flex-basis: 65%;
+}
+/* /sidebar logo */
+/* sidebar menu */
+.sidebar_menu li{
+  margin-bottom: 8px;
+}
+.sidebar_menu li:last-child{
+  margin-bottom: 20px;
+}
+.sidebar_menu img{
+  width: 20px;
+}
+.sidebar_menu a > div{
+  display: inline-block;
+  vertical-align:bottom;
+}
+.sidebar_menu a:hover{
+  text-decoration: none;
+}
+.sidebar_menu div:hover {
+  color: #D2D2D2;
+}
+/* /sidebar menu */
+/* sidebar playlist */
+.sidebar_playlist a{
+  align-items: center;
+}
+.sidebar_playlist .fa-plus-square{
+  font-size: 32px;
+}
+.sidebar_playlist a:hover{
+  text-decoration: none;
+}
+.sidebar_playlist div:hover,
+.playlist_name li:hover {
+  color: #D2D2D2;
+}
+.playlist_name{
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+}
+.playlist_name ul{
+  overflow-y: scroll;
+  position: absolute;
+  height: inherit;
+}
+.playlist_name li{
+  line-height: 2.5em;
+}
+/* /sidebar playlist */
+/* sidebar footer */
+.sidebar_footer{
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sidebar_footer img{
+  width: 15px;
+}
+.sidebar_footer a:last-child img{
+  width: 20px;
+  background-color: #717171;
+  border-radius: 50%;
+}
+.sidebar_footer hr{
+  width: 80%;
+  margin: 10px auto;
+  border-color: #717171;
+}
+.sidebar_footer a:hover{
+  text-decoration: none;
+}
+.sidebar_footer span:hover {
+  color: #D2D2D2;
+}
+/* /sidebar footer */
 /* /sidebar */
 
 #main_content{
@@ -172,9 +278,11 @@ h5{
 
 /* footer */
 #site_footer{
+  z-index: 11;
   height: 70px;
 }
 /* /footer */
+/* media query */
 @media screen and (max-width: 1200px){
   .recently_played ul{
     flex-wrap: wrap;
@@ -211,3 +319,4 @@ h5{
 @media screen and (max-width: 768px){
 
 }
+/* /media query */
