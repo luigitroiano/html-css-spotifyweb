@@ -98,6 +98,7 @@ align-items: stretch;
   position: relative;
   min-width: 250px;
   max-height: 100vh;
+  overflow-y: hidden;
 }
 /* sidebar logo */
 .sidebar_logo{
@@ -152,12 +153,14 @@ align-items: stretch;
   margin: 10px 0;
   position: relative;
   overflow: hidden;
-  height: 100px;
+  height: 180px;
+
 }
 .playlist_name ul{
   overflow-y: scroll;
   position: absolute;
   height: inherit;
+  width: 100%;
 }
 .playlist_name li{
   line-height: 2.5em;
@@ -190,6 +193,11 @@ align-items: stretch;
 }
 .sidebar_footer span:hover {
   color: #D2D2D2;
+}
+@media screen and (max-height:580px){
+  .sidebar_footer{
+    display: none;
+  }
 }
 /* /sidebar footer */
 /* /sidebar */
